@@ -12,15 +12,15 @@ app.use(express.static(path.resolve(path.resolve(), "static")));
 
 app.use(express.json());
 
-app.get('/krivbassLions', (req, res) => {
+app.get('/', (req, res) => {
     res.status(200).send({krivbassLions});
 })
 
-app.get("/krivbassLions/team", (req, res) => {
+app.get("/team", (req, res) => {
   res.status(200).send({ Teams });
 });
 
-app.get("/krivbassLions/MassMedia", (req ,res) => {
+app.get("/MassMedia", (req ,res) => {
   res.status(200).send({MassMedia});
 });
 
